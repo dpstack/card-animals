@@ -1,4 +1,65 @@
 body{
+    margin: 0px;
+    padding: 0px;
     background-color: black;
     color: white;
+}
+
+.sec1{
+    height: 100vh;
+    text-align: center;
+}
+
+.tittle{
+    display: flex;
+    justify-content: center;
+}
+
+.tittle h1{
+    margin-top: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h2{
+
+}
+
+.tit_cad{
+    
+}
+
+.txt_cad{
+    
+}
+
+p{
+
+}
+
+/*Seccion 2*/
+.sec2{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.g1{
+    padding: 50px;
+    margin-top: 15%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.g1 p{
+    
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
 }
