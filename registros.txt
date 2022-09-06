@@ -1,0 +1,133 @@
+devpost
+
+BASE
+
+CODIGO Y NOMBRE
+
+IMAGEN
+
+INFORMACION: 	Ataque, 
+		genero, 
+		resistencia, 
+		velocidad, 
+		nivel de cadena alimenticia
+
+--------------------------------------------------------------------
+
+01 Rinoceronte
+IMAGEN
+Ataque: 80
+genero: Femenino
+resistencia: 95
+velocidad: 50
+nivel de cadena alimenticia: Consumidores primarios 
+
+--------------------------------------------------------------------
+
+02 Caracol
+IMAGEN
+Ataque: 0
+genero: Masculino
+resistencia: 10
+velocidad: 1
+nivel de cadena alimenticia: Consumidores primarios
+
+--------------------------------------------------------------------
+
+03 Langostas
+IMAGEN
+Ataque: 30
+genero: Masculino
+resistencia: 30
+velocidad: 10
+nivel de cadena alimenticia: Consumidores primarios
+
+--------------------------------------------------------------------
+
+04 Jirafas
+IMAGEN
+Ataque: 20
+genero: Masculino
+resistencia: 40
+velocidad: 40
+nivel de cadena alimenticia: Consumidores primarios
+
+--------------------------------------------------------------------
+
+05 Conejos
+IMAGEN
+Ataque: 10
+genero: Masculino
+resistencia: 5
+velocidad: 5
+nivel de cadena alimenticia: Consumidores primarios
+
+--------------------------------------------------------------------
+
+06 Ardilla
+IMAGEN
+Ataque: 10
+genero: Masculino
+resistencia: 10
+velocidad: 10
+nivel de cadena alimenticia: Consumidores primarios
+
+--------------------------------------------------------------------
+
+07 Tapires
+IMAGEN
+Ataque: 23
+genero: Masculino
+resistencia: 20
+velocidad: 35
+nivel de cadena alimenticia: Consumidores primarios
+
+--------------------------------------------------------------------
+
+08 Orugas
+IMAGEN
+Ataque: 0
+genero: Masculino
+resistencia: 2
+velocidad: 2
+nivel de cadena alimenticia: Consumidores primarios
+
+--------------------------------------------------------------------
+
+09 Cebras
+IMAGEN
+Ataque: 30
+genero: Masculino
+resistencia: 25
+velocidad: 35
+nivel de cadena alimenticia: Consumidores primarios
+
+--------------------------------------------------------------------
+
+10 Vacas
+IMAGEN
+Ataque: 20
+genero: Masculino
+resistencia: 15
+velocidad: 8
+nivel de cadena alimenticia: Consumidores primarios
+
+--------------------------------------------------------------------
+
+11
+IMAGEN
+Ataque: 
+genero: 
+resistencia: 
+velocidad: 
+nivel de cadena alimenticia: 
+
+--------------------------------------------------------------------
+
+00
+IMAGEN
+Ataque: 
+genero: 
+resistencia: 
+velocidad: 
+nivel de cadena alimenticia: 
