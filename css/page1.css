@@ -8,45 +8,37 @@ body{
 /*SECCION 1 ///////////////////////////////////////////////////////////////*/
 
 .sec0{
-    height: 100vh;
-}
-
-.sec01{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 400px;
-    width: 1200px;
-    background: rgba(0, 196, 255, 0.04);
-    box-shadow: 0 25px 30px rgba(0,0,0,0.2);
     display: flex;
 }
 
-.content{
-    width: calc(50% - 50px);
-    height: 100%;
-    background: #ffffff;
-    box-sizing: border-box;
-}
-
-.imagenes{
-    width: calc(50% + 50px);
-    height: 100%;
-    background: rgba(0, 255, 245, 0.29);
-    box-sizing: border-box;
-    border-left: 100px solid #fff;
-    border-bottom: 400px solid transparent;
+.izquierda{
+    background: url(../img/Reglas/reglas_ps.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 50%;
 }
 
 .reglas{
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    margin-top: 290px;
+    font-size: 40px;
 }
 
-.reglas h1{
-    margin: 100px 10px 50px 10px;
+.derecha{
+    background: rgba(196, 196, 196, 0.17);
+    height: 100vh;
+    width: 50%;
 }
+
+.derecha p{
+    text-align: center;
+    margin-top: 300px;
+    font-size: 24px;
+}
+
+
+
 
 /*SECCION 2 ///////////////////////////////////////////////////////////////*/
 
