@@ -1,13 +1,58 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    background-color: #4e4e4e;
     color: white;
 }
 
-.sec1{
+/*SECCION 1 ///////////////////////////////////////////////////////////////*/
+
+.sec0{
     height: 100vh;
+}
+
+.sec01{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 1200px;
+    background: rgba(0, 196, 255, 0.04);
+    box-shadow: 0 25px 30px rgba(0,0,0,0.2);
+    display: flex;
+}
+
+.content{
+    width: calc(50% - 50px);
+    height: 100%;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.imagenes{
+    width: calc(50% + 50px);
+    height: 100%;
+    background: rgba(0, 255, 245, 0.29);
+    box-sizing: border-box;
+    border-left: 100px solid #fff;
+    border-bottom: 400px solid transparent;
+}
+
+.reglas{
+    display: flex;
+    justify-content: center;
+}
+
+.reglas h1{
+    margin: 100px 10px 50px 10px;
+}
+
+/*SECCION 2 ///////////////////////////////////////////////////////////////*/
+
+.sec1{
     text-align: center;
+    height: 100vh;
 }
 
 .tittle{
@@ -15,18 +60,82 @@ body{
     justify-content: center;
 }
 
-.tittle h1{
-    margin-top: 200px;
-    margin-left: 10px;
-    margin-right: 10px;
+.tittle h2{
+    margin: 100px 10px 50px 10px;
 }
 
-h2{
+.contenido{
+    display: inline-block;
+}
 
+.capsula1{
+    display: flex;
+}
+
+.capsula2{
+    display: flex;
+}
+
+.skewed{
+    width: 45em;
+    color: #f1f1f1;
+    display: flex;
+    background: #111;
+    margin: 2em 0;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.text{
+    padding: 1.5em;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.image{
+    width: 50%;
+    height: 17em;
+    position: relative;
+    overflow: hidden;
+}
+
+.image::before{
+    content: "";
+    position: absolute;
+    left: -5.1em;
+    top: 50%;
+    transform: translateY(-50%) rotate(20deg);
+    background: #111;
+    width: 40%;
+    height: 140%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.skew-izquierda .image::before{
+    transform: translateY(-50%) rotate(-20deg);
+    left: initial;
+    right: -5.1em;
+}
+
+img{
+    width: 450px;
+    margin-left: -0px;
+}
+
+.img2{
+    margin-left: -60px;
+}
+
+.img4{
+    margin-left: -100px;
 }
 
 .tit_cad{
-    
+    padding: 0 0 0 20px;
 }
 
 .txt_cad{
@@ -37,7 +146,7 @@ p{
 
 }
 
-/*Seccion 2*/
+/*SECCION 3 ///////////////////////////////////////////////////////////////*/
 .sec2{
     height: 100vh;
     display: flex;
