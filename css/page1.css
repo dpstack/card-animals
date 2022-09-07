@@ -139,22 +139,79 @@ p{
 }
 
 /*SECCION 3 ///////////////////////////////////////////////////////////////*/
+.secdiv{
+    display: flex;
+}
+
+.divisorder{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #fff;
+    clip-path: polygon(100% 0,0 100%, 100% 100%);
+}
+
+.divisorizq{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #fff;
+    clip-path: polygon(0 100%,100% 100%,0 0);
+}
+
 .sec2{
     height: 100vh;
     display: flex;
     justify-content: center;
     text-align: center;
+    align-items: center;
+    background: #fff;
 }
 
-.g1{
-    padding: 50px;
-    margin-top: 15%;
-    margin-left: 20px;
-    margin-right: 20px;
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.contenedor .carta{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    margin: 30px;
+}
+
+.contenedor .carta .caja{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #7e7e7e;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 500ms;
+}
+
+.contenedor .carta .caja:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.contenedor .carta .caja .g1{
+    padding: 20px;
 }
 
 .g1 p{
-    
+    font-size: 30px;
 }
 
 ul{
