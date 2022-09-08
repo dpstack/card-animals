@@ -143,7 +143,7 @@ p{
     left: 0;
     width: 100%;
     height: 200px;
-    background: #fff;
+    background: #000000;
     clip-path: polygon(100% 0,0 100%, 100% 100%);
 }
 
@@ -152,7 +152,7 @@ p{
     left: 0;
     width: 100%;
     height: 200px;
-    background: #fff;
+    background: #000000;
     clip-path: polygon(0 100%,100% 100%,0 0);
 }
 
@@ -162,7 +162,7 @@ p{
     justify-content: center;
     text-align: center;
     align-items: center;
-    background: #fff;
+    background: #000000;
 }
 
 .contenedor{
@@ -172,6 +172,7 @@ p{
     max-width: 1600px;
     flex-wrap: wrap;
     padding: 40px 0;
+    z-index: 999;
 }
 
 .contenedor .carta{
@@ -179,6 +180,7 @@ p{
     width: 320px;
     height: 400px;
     margin: 30px;
+    z-index: 999;
 }
 
 .contenedor .carta .caja{
@@ -215,6 +217,50 @@ ul{
 
 li{
     list-style: none;
+}
+
+.contenedorburbujas{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 100;
+}
+    
+.burbujas{
+    position: relative;
+    display: flex;
+}
+
+.burbujas span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #808080,
+        0 0 50px #a0a0a0,
+        0 0 100px #747474;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(120s / var(--i));
+}
+    
+.burbujas span:nth-child(even){
+    background: #ffffff;
+    box-shadow: 0 0 0 10px #808080,
+        0 0 50px #484848,
+        0 0 100px #ffffff;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(110vh) scale(0);
+    }
+    100%{
+        transform: translateY(-20vh) scale(1);
+    }
 }
 
 /*MEDIA QUERY -----------------------------------------------------*/
