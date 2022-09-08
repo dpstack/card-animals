@@ -47,11 +47,6 @@ body{
     height: 100vh;
 }
 
-.tittle{
-    display: flex;
-    justify-content: center;
-}
-
 .tittle h2{
     margin: 100px 10px 50px 10px;
 }
@@ -220,4 +215,281 @@ ul{
 
 li{
     list-style: none;
+}
+
+/*MEDIA QUERY -----------------------------------------------------*/
+
+@media only screen and (min-width: 1366px){
+    body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #4e4e4e;
+    color: white;
+}
+
+/*SECCION 1 ///////////////////////////////////////////////////////////////*/
+
+.sec0{
+    display: flex;
+}
+
+.izquierda{
+    background: url(../img/Reglas/reglas_ps.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 50%;
+}
+
+.reglas{
+    text-align: center;
+    margin-top: 150px;
+    font-size: 35px;
+}
+
+.derecha{
+    background: rgba(196, 196, 196, 0.17);
+    height: 100vh;
+    width: 50%;
+}
+
+.derecha p{
+    text-align: center;
+    margin-top: 230px;
+    font-size: 19px;
+}
+
+
+
+
+/*SECCION 2 ///////////////////////////////////////////////////////////////*/
+    
+.sec1{
+    text-align: center;
+    height: 100vh;
+}
+
+.tittle h2{
+    margin: 100px 10px 50px 10px;
+}
+
+.contenido{
+    display: inline-block;
+}
+
+.capsula1{
+    display: flex;
+}
+
+.capsula2{
+    display: flex;
+}
+
+.skewed{
+    width: 35em;
+    color: #f1f1f1;
+    display: flex;
+    background: #111;
+    margin: 2em 0;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.text{
+    padding: 1.5em;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.image{
+    width: 50%;
+    height: 17em;
+    position: relative;
+    overflow: hidden;
+}
+
+.image::before{
+    content: "";
+    position: absolute;
+    left: -5.1em;
+    top: 50%;
+    transform: translateY(-40%) rotate(10deg);
+    background: #111;
+    width: 40%;
+    height: 140%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.skew-izquierda .image::before{
+    transform: translateY(-40%) rotate(-10deg);
+    left: initial;
+    right: -5.1em;
+}
+    
+.img1{
+    width: 410px;
+    margin-left: -50px;
+}
+
+.img2{
+    width: 365px;
+    margin-left: -60px;
+}
+
+.img3{
+    width: 435px;
+    margin-left: -75px;
+}
+
+.img4{
+    width: 415px;
+    margin-left: -110px;
+}
+
+.tit_cad{
+    padding: 0 0 0 20px;
+}
+
+.txt_cad{
+    
+}
+
+p{
+
+}
+
+/*SECCION 3 ///////////////////////////////////////////////////////////////*/
+.secdiv{
+    display: flex;
+    margin-top: 200px;
+}
+
+.divisorder{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: #fff;
+    clip-path: polygon(100% 0,0 100%, 100% 100%);
+}
+
+.divisorizq{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: #fff;
+    clip-path: polygon(0 100%,100% 100%,0 0);
+}
+
+.sec2{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: #fff;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.contenedor .carta{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    margin: 30px;
+}
+
+.contenedor .carta .caja{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #7e7e7e;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 500ms;
+}
+
+.contenedor .carta .caja:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.contenedor .carta .caja .g1{
+    padding: 20px;
+}
+
+.g1 p{
+    font-size: 30px;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+    
+/*SECTION 4////////////////////////////////////////////////////*/
+
+.contenedorburbujas{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+    
+.burbujas{
+    position: relative;
+    display: flex;
+}
+
+.burbujas span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #808080,
+        0 0 50px #a0a0a0,
+        0 0 100px #747474;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(120s / var(--i));
+}
+    
+.burbujas span:nth-child(even){
+    background: #ffffff;
+    box-shadow: 0 0 0 10px #808080,
+        0 0 50px #484848,
+        0 0 100px #ffffff;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+}
+    
 }
