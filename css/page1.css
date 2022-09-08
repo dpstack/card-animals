@@ -1,8 +1,8 @@
 body{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     background-color: #4e4e4e;
-    color: black;
+    color: #fff;
 }
 
 /*SECCION 1 ///////////////////////////////////////////////////////////////*/
@@ -19,6 +19,19 @@ body{
     width: 50%;
 }
 
+.izquierda a{
+    border: 2px solid #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 900;
+    display: inline-block;
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
+    margin: 20px;
+}
+
 .reglas{
     text-align: center;
     margin-top: 290px;
@@ -29,6 +42,19 @@ body{
     background: rgba(196, 196, 196, 0.17);
     height: 100vh;
     width: 50%;
+    text-align: center;
+}
+
+.derecha a{
+    border: 2px solid #fff;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 900;
+    display: inline-block;
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
 }
 
 .derecha p{
@@ -244,7 +270,7 @@ li{
         0 0 50px #a0a0a0,
         0 0 100px #747474;
     animation: animate 15s linear infinite;
-    animation-duration: calc(120s / var(--i));
+    animation-duration: calc(400s / var(--i));
 }
     
 .burbujas span:nth-child(even){
@@ -256,7 +282,7 @@ li{
 
 @keyframes animate{
     0%{
-        transform: translateY(110vh) scale(0);
+        transform: translateY(100vh) scale(0);
     }
     100%{
         transform: translateY(-20vh) scale(1);
@@ -265,13 +291,7 @@ li{
 
 /*MEDIA QUERY -----------------------------------------------------*/
 
-@media only screen and (min-width: 1366px){
-    body{
-    margin: 0px;
-    padding: 0px;
-    background-color: #4e4e4e;
-    color: white;
-}
+@media only screen and (max-width: 1366px){
 
 /*SECCION 1 ///////////////////////////////////////////////////////////////*/
 
@@ -291,6 +311,7 @@ li{
     text-align: center;
     margin-top: 150px;
     font-size: 35px;
+    color: #fff;
 }
 
 .derecha{
@@ -303,6 +324,7 @@ li{
     text-align: center;
     margin-top: 230px;
     font-size: 19px;
+    color: white;
 }
 
 
